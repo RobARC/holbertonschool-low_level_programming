@@ -1,4 +1,5 @@
-#include<stdio.h>/*
+#include<stdio.h>
+/*
 *This program is about printf function
 *Function main ok
 *Return: Always 0 (Succes)
