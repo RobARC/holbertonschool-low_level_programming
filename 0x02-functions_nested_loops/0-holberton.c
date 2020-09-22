@@ -7,7 +7,16 @@
 
 int main(void)
 {
-printf("Holberton School\n");
+putchar('H');
+putchar('o');
+putchar('l');
+putchar('b');
+putchar('e');
+putchar('r');
+putchar('t');
+putchar('o');
+putchar('n');
+
 return(0);
 }
 
