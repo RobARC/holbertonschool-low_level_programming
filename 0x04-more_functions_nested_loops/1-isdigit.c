@@ -2,7 +2,7 @@
 /**
 * _isdigit -Entry point
 * @c: Is a variable
-* @d: Is una varible
+*
 * Return:  Always 0 (Success)
 */
 int _isdigit(int c)
