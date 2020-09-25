@@ -13,7 +13,8 @@ int main(void)
 		if (i % 5 == 0)
 		printf("Buzz");
 		if (i % 3 != 0 && i % 5 != 0)
-		printf(" %d ", i);
+		printf("%d", i);
+		printf("%c", 32);
 	}
 	printf("\n");
 	return (0);
