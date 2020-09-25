@@ -14,7 +14,7 @@ char e = 32;
 	{
 		for (j = 1; j <= n; j++)
 		{
-			for (i = 1; i <= j; i++)
+			for (i = 2; i <= j; i++)
 			{
 				_putchar(e);
 			}
