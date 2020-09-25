@@ -13,7 +13,7 @@ char d = 35;
 	{
 		for (i = 0; i <= (size - 1); i++)
 		{
-			for (j = 0; j <= (size - 1); j++)
+			for (j = 1; j <= (size - 1); j++)
 			{
 				_putchar(d);
 			}
