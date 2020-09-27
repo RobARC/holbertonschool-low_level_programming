@@ -11,10 +11,10 @@ int j;
 int k;
 int esp = size;
 	if (size > 0)
-	{
+	
 	for (i = 1; i <= size; i++)
 	{
-		for (j = 1; j <= esp; j++)
+		for (j = 2; j <= esp; j++)
 		{
 			_putchar(32);
 
@@ -26,11 +26,11 @@ int esp = size;
 		_putchar('\n');
 		esp = esp - 1;
 	}
-	}
+	
 	else
-	{
+	
 		_putchar('\n');
-	}
+	
 }
 
 
