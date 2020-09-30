@@ -18,7 +18,7 @@ int x, n, x2;
 		}
 		else
 		{
-			n = (x + 1) / 2;
+			n = (x - 1) / 2;
 		}
 
 		x2 = x - n;
@@ -28,5 +28,5 @@ int x, n, x2;
 			_putchar(str[x2]);
 		}
 
-_putchar('\n');
+		_putchar('\n');
 }
