@@ -14,10 +14,10 @@ unsigned int i;
 
 		for (i = 0; i < n; i++)
 		{
-			*s  = b;
-			 s++;
+			s[i]  = b;
+
 		}
 		return (s);
-		_putchar('\n');
+
 
 }
