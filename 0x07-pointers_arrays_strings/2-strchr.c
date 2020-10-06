@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stddef.h>
 /**
  * *_strchr-Entry point
  * @c: is a char variable
@@ -17,6 +17,14 @@ int i;
 			{
 				break;
 			}
+
 		}
-		return (&s[i]);
+		if (s[i] == c)
+		{
+			return (&s[i]);
+		}
+		else
+		{
+			return (NULL);
+		}
 }
