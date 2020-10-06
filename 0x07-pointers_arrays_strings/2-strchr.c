@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stddef.h>
 
 /**
  * *_strchr-Entry point
@@ -20,5 +19,4 @@ int i;
 			}
 		}
 		return (&s[i]);
-
 }
