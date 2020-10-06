@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stddef.h>
+
 /**
  * *_strchr-Entry point
  * @c: is a char variable
@@ -25,6 +25,6 @@ int i;
 		}
 		else
 		{
-			return (NULL);
+			return ('\0');
 		}
 }
