@@ -17,7 +17,7 @@ int j;
 		{
 			if (haystack[j] == needle[i])
 			{
-				return (&haystack[j -1]);
+				return (&haystack[j]);
 			}
 		}
 
