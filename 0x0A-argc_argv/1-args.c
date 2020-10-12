@@ -11,13 +11,10 @@
 
 int main(int argc, char *argv[])
 {
-int i = 0;
-int x;
-	x = strtol(argv[i], NULL,  10);
-
-	if (x >= 0)
 
 	printf("%d \n", (argc - 1));
+
+	argv--;
 
 	return (0);
 }
