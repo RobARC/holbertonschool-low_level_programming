@@ -14,7 +14,7 @@ unsigned int i, l;
 		for (i = 0; str[i] != '\0'; i++)
 		{
 		}
-		len = (char *) malloc((i + 1) * sizeof(char));
+		len = (char *) malloc(i * sizeof(char) + 1);
 
 		if (str == NULL)
 		{
