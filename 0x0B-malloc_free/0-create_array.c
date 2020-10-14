@@ -13,19 +13,18 @@ unsigned int i;
 char *str;
 
 	str = malloc(size * sizeof(char));
-	if (size == 0)
-	{
+	if (size <= 0)
+
 		return (NULL);
-	}
-	if (size != 0)
-	{
-		for (i = 0; i < size; i++)
+
+	if (str == NULL)
+
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+
 		str[i] = c;
 		return (str);
-	}
-	else
-	{
-		return (NULL);
-	}
+
 }
 
