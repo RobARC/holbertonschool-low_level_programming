@@ -13,19 +13,25 @@ char *len;
 unsigned int i, l;
 
 		for (i = 0; str[i] != '\0'; i++)
-		{}
-		if (str == NULL)
-			return (NULL);
-
+		{
+		}
 		len = (char *) malloc((i + 1) * sizeof(char));
 
-		if (len == NULL)
+		if (str == NULL)
+		{
 			return (NULL);
+		}
 
+		if (len == NULL)
+		{
+			return (NULL);
+		}
 		for (l = 0; str[l] != '\0'; l++)
-
+		{
 			len[l] = str[l];
-			return (len);
 
+		}
+	return (len);
 }
+
 
