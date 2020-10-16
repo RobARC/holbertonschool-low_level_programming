@@ -40,7 +40,7 @@ char *p;
 
 	if (n >= l2)
 		l2 = n  + 1; /*nota: en este momento todo el  largo de s2*/
-				/* es l2 = l2 +1 deberia dar 11*/
+				/* asi que nes l2 = l2 +1 deberia dar 11*/
 
 	p = (char *)malloc((l1 + n + 1) * sizeof(char));
 
@@ -52,12 +52,13 @@ char *p;
 		p[i] =  s1[i];
 	}
 
+	p[j] = '\0';
 	for (j = 0; s2[j] != '\0'; j++)
 
 
 		if (j == n)
 		{
-			p[i + j + '\0'] = s2[j];
+			p[i + j] = s2[j];
 			return (p);
 		}
 		else
