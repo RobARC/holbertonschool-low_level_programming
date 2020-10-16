@@ -58,7 +58,7 @@ char *p;
 		if (j == n)
 		{
 			p[i + j] = s2[j];
-			p[i + j] = '\0';
+
 			return (p);
 		}
 		else
