@@ -38,7 +38,7 @@ char *p;
 		s2 = "";
 	 l2 = _strlen(s2);
 
-	if (l2 > n)
+	if (n >= l2)
 		l2 = n; /*nota: en este momento todo el  largo de s2*/
 				/* asi que nes l2 = l2 +1 deberia dar 11*/
 
