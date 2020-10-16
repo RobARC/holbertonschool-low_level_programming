@@ -20,8 +20,10 @@ int n = 0;		if (min > max)
 		ptr = malloc(n * sizeof(int));
 
 		if (ptr == NULL)
+		{
+			free(ptr);
 			return (NULL);
-
+		}
 		for (i = 0; i < n; i++)
 			ptr[i] = min++;
 			min++;
