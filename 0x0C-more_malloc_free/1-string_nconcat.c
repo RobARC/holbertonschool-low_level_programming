@@ -39,10 +39,10 @@ char *p;
 	 l2 = _strlen(s2);
 
 	if (n >= l2)
-		l2 = l2 + 1; /*nota: en este momento todo el  largo de s2*/
+		l2 = n  + 1; /*nota: en este momento todo el  largo de s2*/
 				/* es l2 = l2 +1 deberia dar 11*/
 
-	p = (char *)malloc((l1 + l2 + 1) * sizeof(char));
+	p = (char *)malloc((l1 + n + 1) * sizeof(char));
 
 	if (p == NULL)
 		return (NULL);
@@ -57,6 +57,7 @@ char *p;
 
 		if (j == n)
 		{
+			p[i + j + '\0'] = s2[j];
 			return (p);
 		}
 		else
