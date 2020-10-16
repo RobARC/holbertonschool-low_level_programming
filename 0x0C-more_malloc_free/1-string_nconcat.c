@@ -38,8 +38,8 @@ char *p;
 		s2 = "";
 	 l2 = _strlen(s2);
 
-	if (n >= l2)
-		l2 = l2 + 1; /*nota: en este momento todo el  largo de s2*/
+	if (l2 > n)
+		l2 = n; /*nota: en este momento todo el  largo de s2*/
 				/* asi que nes l2 = l2 +1 deberia dar 11*/
 
 	p = (char *)malloc((l1 + n + 1) * sizeof(char));
@@ -53,16 +53,18 @@ char *p;
 	}
 
 	for (j = 0; s2[j] != '\0'; j++)
+	{
 
-
-		if (j == n + '\0')
+		if (j == n)
 		{
 			p[i + j] = s2[j];
+			p[i + j] = '\0';
 			return (p);
 		}
 		else
 		{
 			p[i + j] = s2[j];
 		}
+	}
 	return (NULL);
 }
