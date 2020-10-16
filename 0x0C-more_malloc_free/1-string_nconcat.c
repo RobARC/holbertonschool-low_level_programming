@@ -66,5 +66,5 @@ char *p;
 			p[i + j] = s2[j];
 		}
 	}
-	return (NULL);
+	return (p);
 }
