@@ -54,17 +54,16 @@ char *p;
 
 	for (j = 0; s2[j] != '\0'; j++)
 	{
-
 		if (j == n)
 		{
 			p[i + j] = s2[j];
-			p[i + j] = '\0';
-			return (p);
+			break;
 		}
 		else
 		{
 			p[i + j] = s2[j];
 		}
 	}
+	p[i + j] = '\0';
 	return (p);
 }
