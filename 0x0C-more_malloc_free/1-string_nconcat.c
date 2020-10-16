@@ -52,7 +52,6 @@ char *p;
 		p[i] =  s1[i];
 	}
 
-	p[j] = '\0';
 	for (j = 0; s2[j] != '\0'; j++)
 
 
@@ -63,7 +62,7 @@ char *p;
 		}
 		else
 		{
-			p[i + j] = s2[j];
+			p[i + j + 0] = s2[j];
 		}
 
 	return (p);
