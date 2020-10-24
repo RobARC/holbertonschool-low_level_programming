@@ -29,9 +29,9 @@ else
 		sum += va_arg(list, int);
 	}
 	va_end(list);
-
+	return (sum);
 }
 
-return (sum);
+return (0);
 
 }
