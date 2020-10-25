@@ -9,40 +9,32 @@
 * @...: arguments
 * @separator: string to be printed between numbers
 */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
 char *str;
 
-	if (separator == NULL)
-	{
-		exit(0);
-	}
-	else
-	{
-		va_list s1;
+	va_list s1;
 
-		va_start(s1, n);
+	va_start(s1, n);
 
-		for (i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
+	{
+		if (s1 == NULL)
 		{
-			if (s1 == NULL)
+			printf("%s", "nil");
+		}
+		else
+		{
+			if (separator == NULL || i == (n - 1))
 			{
-				printf("%s", "nil");
+				str = va_arg(s1, char *);
+				printf("%s", str);
 			}
 			else
 			{
-				if (i == (n - 1))
-				{
-					str = va_arg(s1, char *);
-					printf("%s", str);
-				}
-				else
-				{
-					str = va_arg(s1, char *);
-					printf("%s%s", str, separator);
-				}
+				str = va_arg(s1, char *);
+				printf("%s%s", str, separator);
 			}
 		}
 	}
