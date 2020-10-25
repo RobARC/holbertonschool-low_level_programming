@@ -20,23 +20,20 @@ char *str;
 
 	for (i = 0; i < n; i++)
 	{
-		if (s1 == NULL)
+		str = va_arg(s1, char *);
+		if (str == NULL)
 		{
 			printf("%s", "(nil)");
 		}
+		if (separator == NULL || i == (n - 1))
+		{
+			printf("%s", str);
+		}
 		else
 		{
-			if (separator == NULL || i == (n - 1))
-			{
-				str = va_arg(s1, char *);
-				printf("%s", str);
-			}
-			else
-			{
-				str = va_arg(s1, char *);
-				printf("%s%s", str, separator);
-			}
+			printf("%s%s", str, separator);
 		}
+
 	}
 	printf("\n");
 }
