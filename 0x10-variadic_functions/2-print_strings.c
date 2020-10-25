@@ -22,7 +22,7 @@ char *str;
 	{
 		if (s1 == NULL)
 		{
-			printf("%s", "nil");
+			printf("%s", "(nil)");
 		}
 		else
 		{
