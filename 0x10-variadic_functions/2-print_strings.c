@@ -25,13 +25,13 @@ char *str;
 		{
 			printf("%s", "(nil)");
 		}
-		if (separator == NULL || i == (n - 1))
+		else
 		{
 			printf("%s", str);
 		}
-		else
+		if (separator != NULL && i != (n - 1))
 		{
-			printf("%s%s", str, separator);
+			printf("%s", separator);
 		}
 
 	}
