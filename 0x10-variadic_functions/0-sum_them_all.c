@@ -14,13 +14,15 @@ unsigned int i, sum;
 	if (n > 0)
 	{
 		va_list num;
+
 		va_start(num, n);
+
 		sum = 0;
-		for(i = 0; i < n; i++)
+		for (i = 0; i < n; i++)
 			sum += va_arg(num, unsigned int);
 		va_end(num);
 		return (sum);
 	}
-	return(0);
+	return (0);
 }
 
