@@ -13,10 +13,10 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *newlits;
+
 unsigned int count = 0;
 
-	newlists = malloc(sizeof(struct list_s));
+struct list_s* newlists = malloc(sizeof(struct list_s));
 
 	if (newlists == NULL)
 
