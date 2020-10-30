@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*
+/**
  * print_list - point print all nodes from a lists
  * @h: pointer to the struct
  * Return: lists lenght
