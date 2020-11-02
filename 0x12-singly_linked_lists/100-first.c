@@ -8,7 +8,7 @@
  */
 
 
-void functionBeforeMain(void)
+void __attribute__ ((constructor)) functionBeforeMain()
 {
 
 	printf("%s", "You're beat! and yet, you must allow,\n");
