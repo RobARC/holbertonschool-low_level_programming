@@ -13,7 +13,7 @@ unsigned int n = 0;
 
 	while (h != NULL)
 	{
-		printf("%d\n", h->n);
+		printf("%i\n", h->n);
 		n++;
 		h = h->next;
 	}
