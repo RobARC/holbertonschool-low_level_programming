@@ -14,8 +14,8 @@ unsigned int n = 0;
 	while (h != NULL)
 	{
 		printf("%i\n", h->n);
-		n++;
 		h = h->next;
+		n++;
 	}
 return (n);
 }
