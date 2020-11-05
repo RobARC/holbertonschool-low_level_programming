@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
-* print_listint - print the elements of the list
+* listint_len - print the elements of the list
 * @h: is a pointer to struct
 * Return: elements of the list
 */
