@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
-* read_textfile - function that reads a text file and prints it standard output 
+* read_textfile - function that reads a text file and prints it standard output
 * @filename: variable pointer
 * @letters: num of characters
 * Return: integer numletter
@@ -14,7 +14,7 @@ int fd;
 char *buffer;
 int numletters;
 
-	if (filename == NULL || letters == 0) /* I recieved a pointer if its NULL return 0 */
+	if (filename == NULL || letters == 0) /* if its NULL return 0 */
 		return (0);
 
 	buffer = malloc((letters) * sizeof(char)); /*prerpare space pointer buffer*/
