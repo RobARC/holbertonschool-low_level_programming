@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stddef.h>
+#include <string.h>
 /**
  * *_strstr-Entry point
  * @haystack: is a variable pointer
