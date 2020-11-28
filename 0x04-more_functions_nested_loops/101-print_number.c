@@ -1,7 +1,5 @@
 #include "holberton.h"
 
-void print_number_recursive(unsigned int n);
-
 /**
  * print_number - Prints an integer.
  * @n: Integer to be printed.
