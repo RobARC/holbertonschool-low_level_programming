@@ -1,26 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - Prints all single digit numbers in ascending order with a comma and
- * space in between them using ASCII code.
- *
- * Return: 0 if no errors
- */
+* main - print numbers from 00 to 99
+*
+* Return: 0 (Success)
+*/
 int main(void)
 {
-	int i = 48;
+int a;
+int b;
+a = 0;
 
-	while (i < 58)
+	while (a <= 9)
 	{
-		putchar(i);
-		if (i != 57)
+		b = 0;
+		while (b <= 9)
 		{
-			putchar(44);
-			putchar(32);
+			putchar('0' + a);
+			putchar('0' + b);
+			if (a != 9 || b != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		b++;
 		}
-		i++;
+		a++;
 	}
-
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
+
