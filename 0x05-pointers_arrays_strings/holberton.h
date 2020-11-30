@@ -22,7 +22,7 @@ void print_square(int size);
 void print_triangle(int size);
 void reset_to_98(int *n);
 char * _strcpy(char *dest, const char *src);
-
+int _atoi(char *s);
 
 
 
