@@ -10,7 +10,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 
 	dlistint_t *tmp;	/* pointer to create new nodo */
-	dlistint_t *tmp2;	/* pointer to link the last nodo */
 
 	if (head == NULL) /* ask for head is NULL */
 	{
@@ -29,13 +28,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	if (*head != NULL) /* first time *head it will be NULL */
 	{
-		tmp2 = *head;
-		while (tmp2->next != NULL)
-		{
-			tmp2 = tmp2->next;
-		}
-		tmp2->next = tmp;
-		tmp->prev = tmp2;
+		tmp->next = *head;
+		(*head)->prev = tmp;
 	}
 	else
 	{
