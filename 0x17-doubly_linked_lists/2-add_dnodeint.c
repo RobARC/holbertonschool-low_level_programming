@@ -31,10 +31,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		tmp->next = *head;
 		(*head)->prev = tmp;
 	}
-	else
-	{
-		*head = tmp; /* to create head the first time */
-	}
+	*head = tmp; /* to create head the first time */
 
 	return (tmp);
 }
