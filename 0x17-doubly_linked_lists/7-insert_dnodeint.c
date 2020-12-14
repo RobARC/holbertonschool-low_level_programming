@@ -25,34 +25,32 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new->n = n;
 	new->next = NULL;
 	new->prev = NULL;
-	if (idx == 0) /* is the given position is the first */
+	if (idx == 0) /* is the given position is the first*/ 
 	{
 		new->next = *h;
 		*h = new;
 		aft->prev = new;
-		return (new);
+		return (new); 
 	}
 	while (aft != NULL)
 	{
-		if (count == idx) /* find the position to insert */
+		if (count == idx -1) /* find the position to insert */
 			break;
 		count++;
 		aft = aft->next;
-		printf("hola mundo");
 	}
-	if (count != idx)
+	/*if (count != idx)
 	{
 		free(new);
 		return (NULL);
-	}
+	}*/
 	new->prev = aft; /* pointer to aft-prev */
 	new->next = aft->next; /* pointer to aft->next */
-	aft->prev = new; 
+	aft->next = new; 
 	aft = aft->next;
 	aft = aft->next;
-	if (aft->next != NULL) /* if find the last nodo jump this step */
-		(aft->next)->prev = new; /* pointer prev to new */
+	if (aft != NULL) /* if find the last nodo jump this step */
+		aft->prev = new; /* pointer prev to new */
 
-	aft->next = new;
 	return (new);
 }
