@@ -26,6 +26,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new->next = NULL;
 	new->prev = NULL;
 
+	if (idx == 0) /* is the given position is the first */
+	{
+		new->next = *h;
+		*h = new;
+		aft->prev = new;
+		return (new);
+	}
+		
 	while (aft != NULL)
 	{
 		if (count == idx) /* find the position to insert */
