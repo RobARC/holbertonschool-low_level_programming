@@ -49,7 +49,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	aft->next = new;
 	aft = aft->next;
 	aft = aft->next;
-	if (aft != NULL) /* if find the last nodo jump this step */
+	if (aft->next != NULL) /* if find the last nodo jump this step */
 		(aft->next)->prev = new; /* pointer prev to new */
 
 	return (new);
