@@ -7,27 +7,23 @@
  *Return: New node insert
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
-{
-	unsigned int count = 0;
+{	unsigned int count = 0;
 	dlistint_t *new, *aft;
 
 	aft = *h;
 
 	if (h == NULL && idx != 0)
 		return (NULL);
-
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
-	{
-		free(new);
+	{	free(new);
 		return (NULL);
 	}
 	new->n = n;
 	new->next = NULL;
 	new->prev = NULL;
 	if (idx == 0) /* is the given position is the first*/
-	{
-		new->next = *h;
+	{	new->next = *h;
 		*h = new;
 		aft->prev = new;
 		return (new);
@@ -40,8 +36,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		aft = aft->next;
 	}
 	if (count != idx - 1)
-	{
-		free(new);
+	{	free(new);
 		return (NULL);
 	}
 	new->prev = aft; /* pointer to aft-prev */
