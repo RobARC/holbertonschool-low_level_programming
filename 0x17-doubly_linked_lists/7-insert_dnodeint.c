@@ -29,6 +29,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		count++;
 		aft = aft->next;
 	}
+	if (count != idx)
+	{
+		free(new);
+		return (NULL);
+	}
 	new->next = aft->next; /* pointer to aft->next */
 	new->prev = aft->prev; /* pointer to aft-prev */
 
