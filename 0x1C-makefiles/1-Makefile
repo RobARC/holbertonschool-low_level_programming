@@ -1,0 +1,8 @@
+#make using variables CC ans SRC
+CC = gcc
+SRC = main.c holberton.c
+
+all: main.c m.h holberton.c
+	$(CC) $(SRC) -o holberton
+
+ 

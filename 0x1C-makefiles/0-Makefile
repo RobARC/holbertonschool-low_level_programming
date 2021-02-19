@@ -1,0 +1,4 @@
+# This is my first make file
+
+all: holberton.c m.h main.c
+	gcc main.c holberton.c -o holberton
