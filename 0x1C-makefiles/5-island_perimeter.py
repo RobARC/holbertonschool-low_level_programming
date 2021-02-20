@@ -10,7 +10,7 @@ def island_perimeter(grid):
     count = 0
 
     if row == 0:
-        return
+        return count
 
     for a in range(row):
         for b in range(col):
