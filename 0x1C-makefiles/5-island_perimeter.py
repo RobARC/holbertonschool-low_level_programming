@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""module island perimeter"""
 
 
 def island_perimeter(grid):
+    """method found island perimeter"""
 
     row = len(grid)
     col = len(grid[0])
@@ -9,7 +11,7 @@ def island_perimeter(grid):
 
     if row == 0:
         return
-    
+
     for a in range(row):
         for b in range(col):
             if(grid[a][b] == 1):
